@@ -1,0 +1,158 @@
+/*--=====================================================
+|-Contact Styles                                      |
+=======================================================--*/
+.mistake{
+    display: block;
+    padding: 12px 20px;
+    background: #f8d7da;
+    color: #721c24;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    text-transform: capitalize;
+}
+
+.containerContact{
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    margin: 20px auto;
+    top: 3200px;
+}
+
+.containerContact h1{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #00BCE3;
+    padding-bottom: 60px;
+}
+
+.containerContact .content{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.containerContact .content .information,
+.containerContact .content form{
+    width: 50%;
+}
+
+.containerContact .content .information{
+    padding-left: 10px;
+}
+
+.containerContact .content .information .col{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.containerContact .content .information .col .icon{
+    color: #00BCE3;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+
+.containerContact .content .information .networks{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.containerContact .content .information .networks li a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #00BCE3;
+    color: #fff;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 18px;
+    box-shadow: 0px 3px 8px rgb(0, 188, 227, 0.5);
+}
+
+.containerContact .content form{
+    padding-left: 10px;
+}
+
+.containerContact .content form input[type="text"],
+.containerContact .content form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid rgb(0, 188, 227, 0.3);
+    color: #333;
+    font-weight: 400;
+    outline: 0;
+}
+
+.containerContact .content form textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.containerContact .content form input[type="text"]:focus,
+.containerContact .content form textarea:focus{
+    border: 2px solid #00BCE3;
+}
+
+.containerContact .content form button{
+    padding: 12px 30px;
+    border: transparent;
+    background: #00BCE3;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    .containerContact{
+        top: 3150px;
+    }
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    .containerContact{
+        top: 4000px;
+    }
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    .containerContact{
+        padding: 40px 20px;
+        top: 5850px;
+    }
+    
+    .containerContact .content .information,
+    .containerContact .content form{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .containerContact .content .information{
+        margin-bottom: 30px;
+    }
+
+}

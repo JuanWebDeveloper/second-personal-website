@@ -1,0 +1,311 @@
+/*--=====================================================
+|-Navbar Styles                                         |
+=======================================================--*/
+.containerNavbar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    z-index: 1000;
+    transition: 0.3s all linear;
+}
+
+.containerNavbar #bars{
+    display: none;
+}
+
+.containerNavbar-scroll{
+    height: 60px;
+    background: #f2f2f2;
+    border-bottom: 5px solid #00BCE3;
+    transition: 0.3s all linear;
+}
+
+.containerNavbar-scroll a{
+    color: #333;
+}
+
+.containerNavbar img{
+    position: relative;
+    top: 10px;
+    margin-left: 50px;
+}
+
+.containerNavbar nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.containerNavbar nav ul{
+    position: relative;
+    bottom: 27px;
+}
+
+.containerNavbar nav ul li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.containerNavbar nav ul li a{
+    font-size: 22px;
+    transition: 0.5s all linear
+}
+
+.containerNavbar nav ul li a:hover{
+    color: #00BCE3;
+}
+
+/*--=====================================================
+|-Header Styles                                         |
+=======================================================--*/
+header{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+header .containerPresentation{
+    position: absolute;
+    width: 800px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 80;
+}
+
+header .containerPresentation h1{
+    font-size: 60px;
+    text-align: center;
+    color: #e9e9e9;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+header center{
+    position: relative;
+    width: 800px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 65%;
+    z-index: 80;
+}
+
+header center a{
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #00BCE3;
+    text-decoration: none;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+                inset 4px 4px 10px rgb(0, 188, 227, 0.3);
+}
+
+header center a:hover span{
+    display: block;
+    transform: scale(0.98);
+}
+
+header .containerSocial{
+    position: absolute;
+    width: 800px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 80%;
+    z-index: 80;
+}
+
+header .containerSocial ul{
+    display: flex;
+    justify-content: center;
+}
+
+header .containerSocial ul li{
+    padding: 0 50px;
+}
+
+header .containerSocial ul li a{
+    font-size: 50px;
+    opacity: 1;
+    transition: 0.5s all ease;
+}
+
+/*--=====================================================
+|-Responsive Design                                      |
+=======================================================--*/
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    /*--=====================================================
+    |-Navbar Styles                                         |
+    =======================================================--*/
+    .containerNavbar{
+        height: 60px;
+    }
+
+    .containerNavbar #bars{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        font-size: 40px;
+        color: #e9e9e9;
+        left: 93%;
+        bottom: 40px;
+        z-index: 100;
+    }
+
+    .containerNavbar-scroll #bars{
+        color: #00BCE3;
+    }
+    
+    .containerNavbar img{
+        right: 50px;
+    }
+
+    .containerNavbar nav{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: #f2f2f2;
+        bottom: 40px;
+    }
+
+    .containerNavbar nav ul{
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .containerNavbar nav ul li{
+        display: block;
+        text-align: center;
+        padding: 25px 0px;
+    }
+
+    .containerNavbar nav ul li a{
+        color: #333;
+    }
+
+    /*--=====================================================
+    |-Header Styles                                         |
+    =======================================================--*/
+    header .containerPresentation{
+        width: 100%;
+    }
+
+    header center{
+        width: 100%;
+    }
+    
+    header .containerSocial{
+        width: 100%;
+    }
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    /*--=====================================================
+    |-Navbar Styles                                         |
+    =======================================================--*/
+    .containerNavbar{
+        height: 60px;
+    }
+
+    .containerNavbar #bars{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        font-size: 40px;
+        color: #e9e9e9;
+        left: 85%;
+        bottom: 40px;
+        z-index: 100;
+    }
+
+    .containerNavbar-scroll #bars{
+        color: #00BCE3;
+    }
+
+    .containerNavbar img{
+        right: 50px;
+    }
+
+    .containerNavbar nav{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: #f2f2f2;
+        bottom: 40px;
+    }
+
+    .containerNavbar nav ul{
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .containerNavbar nav ul li{
+        display: block;
+        text-align: center;
+        padding: 25px 0px;
+    }
+
+    .containerNavbar nav ul li a{
+        color: #333;
+    }
+
+    /*--=====================================================
+    |-Header Styles                                         |
+    =======================================================--*/
+    header .containerPresentation{
+        width: 100%;
+    }
+    
+    header .containerPresentation h1{
+        font-size: 25px;
+    }
+    
+    header center{
+        width: 100%;
+    }
+
+    header center a{
+        padding: 5px 25px;
+    }
+    
+    header .containerSocial{
+        width: 100%;
+    }
+    
+    header .containerSocial ul li{
+        padding: 0 20px;
+    }
+    
+    header .containerSocial ul li a{
+        font-size: 25px;
+    }
+
+}
+

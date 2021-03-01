@@ -1,0 +1,105 @@
+/*--=====================================================
+|-Footer Styles                                      |
+=======================================================--*/
+footer{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 4000px;
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+footer .networksFooter{
+    position: relative;
+    width: 80%;
+    height: 150px;
+    left: 10%;
+    top: 100px;
+    z-index: 10;
+}
+
+footer .networksFooter ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer .networksFooter ul li{
+    padding: 0px 50px;
+}
+
+footer .networksFooter ul li a{
+    font-size: 50px;
+    opacity: 1;
+    transition: 0.5s all ease;
+}
+
+footer .networksFooter ul li a:hover{
+    opacity: 0.5;
+}
+
+footer .networksFooter p{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+    color: #fff;
+}
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+@media (min-width:1200px){
+}
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    footer{
+        top: 3900px;
+    }
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    footer{
+        top: 4750px;
+    }mer
+
+    footer .networksFooter p{
+        font-size: 25px;
+    }
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    footer{
+        top: 6900px;
+    }
+
+    footer .networksFooter ul li{
+        padding: 0px 20px;
+    }
+    
+    footer .networksFooter ul li a{
+        font-size: 30px;
+    }
+    
+    footer .networksFooter p{
+        font-size: 20px;
+    }
+}

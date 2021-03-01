@@ -1,0 +1,165 @@
+/*=====================================================
+|-Projects Style                                       |
+=====================================================*/
+.projectsStructure{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.projectsStructure .projectArea{
+    position: relative;
+}
+
+.projectsStructure .projectArea .buttonGroup{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.projectsStructure .projectArea .buttonGroup button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 10px 50px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    transition: .5s all linear;
+}
+
+.projectsStructure .projectArea .buttonGroup button.active{
+	padding: 5px 15px;
+	transform: scale(1,1);
+	z-index: 10;
+	color: #fff !important;
+}
+
+.projectsStructure .projectArea .buttonGroup button.active::before, .projectsStructure .projectArea .buttonGroup button.active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+	height: 50%;
+	background: #37ddbe;
+	border-radius: 5px;
+	box-shadow: inset -4px -4px 20px 0 #37ddbe,
+				inset 4px 4px 20px 0 rgba(0, 0, 0, .8);;
+	transition: .5s all ease-in-out;
+	opacity: 1;
+	z-index: -1;
+}
+
+.projectsStructure .projectArea .buttonGroup button::before, .projectsStructure .projectArea .buttonGroup button::after{
+    content: '';
+    position: absolute;
+    width: 0;
+	height: 50%;
+	background: #37ddbe;
+	box-shadow: inset -4px -4px 20px 0 #37ddbe,
+				inset 4px 4px 20px 0 rgba(0, 0, 0, .8);
+    transition: .5s all ease-in-out;
+	opacity: 0;
+	z-index: -1;
+}
+
+.projectsStructure .projectArea .buttonGroup button::before{
+    top: 0;
+    left: 0;
+}
+
+.projectsStructure .projectArea .buttonGroup button::after{
+    bottom: 0;
+    right: 0;
+}
+
+.projectsStructure .projectArea .buttonGroup button:hover::before, .projectsStructure .projectArea .buttonGroup button:hover::after{
+    opacity: .5;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inset -4px -4px 20px 0 #37ddbe,
+				inset 4px 4px 20px 0 rgba(0, 0, 0, .8);
+    transition: .5s all ease-in-out;
+}
+
+.projectsStructure .projectArea .buttonGroup button:hover{
+	opacity: 1;
+	color: #fff !important;
+	padding: 5px 15px;
+	transform: scale(1,1);
+	transition: .5s all ease-in-out;
+}
+
+.projectsStructure .projectArea .buttonGroup button + button{
+    padding-left: 3rem;
+}
+
+.projectsStructure .projectArea .grid .our-project .title h4{
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #37ddbe;
+}
+
+.projectsStructure .projectArea .grid .our-project .img{
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, rgba(102, 102, 102, .9)  0%, rgba(55, 221, 190, .9) 90%);
+    overflow:hidden;
+    transition: .3s all ease-in-out;
+}
+
+.projectsStructure .projectArea .grid .our-project .img a:hover img{
+    transition: .3s all ease-in-out;
+	opacity: .5;
+    transform: scale(1.1,1.1);  
+}
+
+/*--=====================================================
+|-Diseño Responsive                                      |
+=======================================================--*/
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media screen and (max-width: 980px){
+    .projectsStructure .projectArea .buttonGroup button{
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .projectsStructure .projectArea .buttonGroup button.active{
+        padding: 10px 15px;
+    }
+
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media screen and (max-width: 600px){
+    .projectsStructure .projectArea{
+        margin-top: 0px;
+    }
+    
+    .projectsStructure .projectArea .buttonGroup{
+        width: 100%;
+        display: block;
+    }
+    
+    .projectsStructure .projectArea .buttonGroup button{
+        display: block;
+        width: 90%;
+        padding: 10px 0px;
+        text-align: right;
+        margin-bottom: 30px;
+        margin-left: 5%;
+    }
+
+    .projectsStructure .projectArea .buttonGroup button.active{
+        text-align: right;
+        padding: 5px 15px;
+    }
+}
+

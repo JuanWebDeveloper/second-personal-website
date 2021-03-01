@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="icon" href="img/logo.png">
+
+    <!--=====================================================
+    |-CSS Plugins                                          |
+    =======================================================-->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!--=====================================================
+    |-CSS Style Sheets                                      |
+    =======================================================-->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--=====================================================
+    |-JavaScript Plugins                                    |
+    =======================================================-->
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/plugins/isotope.min.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+</head>
+<body>
+    <!--=====================================================
+    |-Navbar                                               |
+    =======================================================-->
+    <div class="containerNavbar">
+
+        <img src="img/logo.png" width="100px" height="40px">
+
+        <span id="bars"><i class="fa fa-bars"></i></span>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    
+    <!--=====================================================
+    |-Header                                                |
+    =======================================================-->
+    <header>
+        <div class="containerPresentation">
+            <h1><span class="typed"></span></h1>
+        </div>
+
+        <center>
+            <a href="#"><span>Contact me</span></a>
+        </center>
+
+        <div class="containerSocial">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!--=====================================================
+    |-About                                                 |
+    =======================================================-->
+    <div class="container-fluid containerAbout">
+        <div class="container">
+            <div class="row">
+
+                <section class="col-xs-12">
+                    <h1>About</h1>
+                </section>
+
+                <div class="col-sm-4 col-xs-12 containerPhoto">
+                    <img src="img/photo.png" width="100%" height="100%">
+                </div>
+
+                <div class="col-sm-8 col-xs-12 containerBiography">
+                    <h1>hello world <span>I'm Juan</span></h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed fuga eaque, culpa cupiditate animi laborum natus! Similique odio sit facilis dolorum dicta velit provident sequi iusto, est pariatur quisquam corrupti animi necessitatibus aliquid deserunt reprehenderit voluptatibus? Exercitationem deserunt fugit dicta nesciunt velit quae tempora eius praesentium odio est, voluptatem vero incidunt omnis ad iure, soluta maiores nostrum inventore alias culpa. Nihil suscipit possimus est harum accusamus impedit libero deleniti repellat.</p>
+                </div>
+
+                <div class="containerSkill">
+                    <h1>my skills</h1>
+                    <div class="skills">
+                        <span class="name">HTML</span>
+                        <div class="percent">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="value">90%</span>
+                    </div>
+
+                    <div class="skills">
+                        <span class="name">CSS</span>
+                        <div class="percent">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                        <span class="value">85%</span>
+                    </div>
+
+                    <div class="skills">
+                        <span class="name">JavaScript</span>
+                        <div class="percent">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                        <span class="value">70%</span>
+                    </div>
+
+                    <div class="skills">
+                        <span class="name">PHP</span>
+                        <div class="percent">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                        <span class="value">75%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--=====================================================
+    |-Works                                      |
+    =======================================================-->
+    <section class="project-area">
+        <div class="container">
+            <div class="project-title pb-5">
+                <h1 class="text-capitalice title-h1 tituloP">my works</h1>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="active activeP" id="btn1" data-filter="*">All</button>
+                <button type="button" data-filter=".personal">Personal</button>
+                <button type="button" data-filter=".empresas">Business</button>
+                <button type="button" data-filter=".blog">Blogs</button>
+                <button type="button" data-filter=".school">Schools</button>
+            </div>
+
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item personal">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p1.png">
+                                <img src="./img/portfolio/p1.png" alt="portfolio-1" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Personal website</h4>
+                            <span class="text-secondary">Link to Page</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item blog">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p2.png">
+                                <img src="./img/portfolio/p2.png" alt="portfolio-2" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Tech News Blog</h4>
+                            <span class="text-secondary">Link to Page</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item school">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p3.png">
+                                <img src="./img/portfolio/p3.png" alt="portfolio-3" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Online Learning Website</h4>
+                            <span class="text-secondary">Link to Page</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item personal">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p4.jpg">
+                                <img src="./img/portfolio/p4.jpg" alt="portfolio-4" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">artist website</h4>
+                            <span class="text-secondary">Link to Page</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item empresas">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p5.png">
+                                <img src="./img/portfolio/p5.png" alt="portfolio-5" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Web Games Company</h4>
+                            <span class="text-secondary">Link to Page</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item empresas">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p5.png">
+                                <img  src="./img/portfolio/p6.png" alt="portfolio-5" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Education platform website</h4>
+                            <span class="text-secondary">Link to Page</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!--=====================================================
+    |-Services                                      |
+    =======================================================-->
+    <div class="container-fluid containerServicesA">
+        <h1>Services</h1>
+        <div class="containerServices">
+
+            <div class="card">
+
+                <div class="containerImg">
+                    <img src="img/servicios/design.png">
+                </div>
+
+                <div class="containerText">
+                    <h2>Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolor laborum impedit velit vel, perferendis natus magnam, earum nam veniam assumenda illo et, recusandae optio provident doloremque amet! Sunt, assumenda.</p>
+                    <a href="#"><span>Read More</span></a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="containerImg">
+                    <img src="img/servicios/code.png">
+                </div>
+
+                <div class="containerText">
+                    <h2>Code</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolor laborum impedit velit vel, perferendis natus magnam, earum nam veniam assumenda illo et, recusandae optio provident doloremque amet! Sunt, assumenda.</p>
+                    <a href="#"><span>Read More</span></a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="containerImg">
+                    <img src="img/servicios/launch.png">
+                </div>
+
+                <div class="containerText">
+                    <h2>Launch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolor laborum impedit velit vel, perferendis natus magnam, earum nam veniam assumenda illo et, recusandae optio provident doloremque amet! Sunt, assumenda.</p>
+                    <a href="#"><span>Read More</span></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--=====================================================
+    |-Contact                                      |
+    =======================================================-->
+    <div class="containerContact">
+
+        <h1>Contact</h1>
+
+        <div class="content">
+
+            <div class="information">
+
+                <div class="col">
+                    <i class="icon fas fa-map-marker-alt"></i>
+                    <p>Avenue San Pablo Medellin - Colombia</p>
+                </div>
+
+                <div class="col">
+                    <i class="icon fas fa-envelope"></i>
+                    <p>Jv88@gmail.com</p>
+                </div>
+
+                <div class="col">
+                    <i class="icon fas fa-phone"></i>
+                    <p>(57) 300-598-2056</p>
+                </div>
+
+                <div class="networks">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </div>
+
+            </div>
+
+            <form method="GET">
+
+                <input type="text" name="name" placeholder="Full Name" id="name">
+                <input type="text" name="email" placeholder="Email" id="email">
+                <input type="text" name="affair" placeholder="Affair" id="affair">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                <button type="button" onclick="formValidation()">Send</button>
+            </form>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="networksFooter">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            
+            <p>&copy; 2019, Todos Los Derechos Reservados - Juan Vargas</p>
+        </div>
+
+    </footer>
+    
+
+    <script src="js/header.js"></script>
+    <script src="js/works.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

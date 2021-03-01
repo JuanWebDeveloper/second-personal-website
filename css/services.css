@@ -1,0 +1,150 @@
+/*--=====================================================
+|-Services Styles                                      |
+=======================================================--*/
+.containerServicesA{
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: 2550px;
+}
+
+.containerServicesA h1{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #00BCE3;
+}
+
+.containerServices{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    left: 5%;
+    margin-top: 30px;
+}
+
+.containerServices .card{
+    width: 320px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+                 6px 6px 20px rgb(0, 188, 227, 0.3);
+}
+
+.containerServices .card:hover{
+    cursor: pointer;
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
+                inset 6px 6px 20px rgb(0, 188, 227, 0.3);
+} 
+
+.containerServices .card .containerImg{
+    position: relative;
+    text-align: center;
+}
+
+.containerServices .card .containerImg img{
+    max-width: 120px;
+}
+
+.containerServices .card .containerText{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.containerServices .card .containerText h2{
+    color: #00BCE3;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.containerServices .card .containerText a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #00BCE3;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+                 4px 4px 15px rgb(0, 188, 227, 0.3);
+}
+
+.containerServices .card .containerText a:hover{
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+                inset 4px 4px 10px rgb(0, 188, 227, 0.3);
+}
+
+.containerServices .card .containerText a:hover span{
+    display: block;
+    transform: scale(0.98);
+}
+
+.containerServices .card:hover .containerImg,
+.containerServices .card:hover .containerText{
+    transform: scale(0.98);
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    .containerServicesA{
+        width: 100%;
+        top: 2450px;
+        left: 0;
+    }
+    
+    .containerServices{
+        width: 90%;
+        left: 5%;
+    }
+    
+    .containerServices .card{
+        width: 30%;
+        margin: 10px 5px;
+    }
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    .containerServicesA{
+        width: 100%;
+        top: 2750px;
+        left: 0;
+    }
+    
+    .containerServices{
+        width: 90%;
+        left: 5%;
+    }
+    
+    .containerServices .card{
+        width: 45%;
+        margin: 10px 15px;
+    }
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    .containerServicesA{
+        width: 100%;
+        top: 3900px;
+        left: 0;
+    }
+    
+    .containerServices{
+        width: 90%;
+    }
+    
+}
